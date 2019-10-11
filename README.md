@@ -15,5 +15,9 @@ PHPの学習記録です。
     - 【Docker】MySQLで文字化けしたので対応する
     - [note](https://note.mu/koushikagawa/n/n9aa2bbf00569)にて解説してます。
 
+- L4
+    - 【PHP】PDOを使ってMySQLに接続する方法
+    - [note](https://note.mu/koushikagawa/n/n063e1bc53dbb)にて解説してます。
+
 ## Author
 [Koushi Kagawa](https://github.com/KoushiKagawa)
