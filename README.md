@@ -9,7 +9,11 @@ PHPの学習記録です。
 
 - L2
     - Dockerで構築したPHP7.3 + MySQLでPDO接続をする方法
-    - [note](https://note.mu/notes/na42e0634f09d/edit)にて解説してます。
+    - [note](https://note.mu/koushikagawa/n/na42e0634f09d)にて解説してます。
+
+- L3
+    - 【Docker】MySQLで文字化けしたので対応する
+    - [note](https://note.mu/koushikagawa/n/n9aa2bbf00569)にて解説してます。
 
 ## Author
 [Koushi Kagawa](https://github.com/KoushiKagawa)
