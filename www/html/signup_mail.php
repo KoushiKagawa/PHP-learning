@@ -76,7 +76,8 @@ if (isset($_POST['submit'])) {
         * 今回はメール送信はしないためコメント
         */
         /*  
-    	$mailTo = $mail;
+        $mailTo = $mail;
+        $companymail = "test@example.com"
         $body = <<< EOM
         この度はご登録いただきありがとうございます。
         24時間以内に下記のURLからご登録下さい。

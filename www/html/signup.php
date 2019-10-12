@@ -118,7 +118,8 @@ if(isset($_POST['btn_submit'])){
 		* 登録ユーザと管理者へ仮登録されたメール送信
         */
 /* 
-		$mailTo = $mail.','.$companymail;
+        $mailTo = $mail.','.$companymail;
+        $companymail = "test@example.com"
         $body = <<< EOM
         この度はご登録いただきありがとうございます。
 		本登録致しました。
