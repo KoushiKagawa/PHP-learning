@@ -19,7 +19,7 @@ PHPの学習記録です。
     - 【PHP】PDOを使ってMySQLに接続する方法
     - [note](https://note.mu/koushikagawa/n/n063e1bc53dbb)にて解説してます。
 
-- L4
+- L5
     - 【PHP】メール認証を利用した会員登録機能の作成方法
     - [note](https://note.mu/koushikagawa/n/n9c6e396e2687)にて解説してます。
 
