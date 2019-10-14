@@ -48,7 +48,6 @@ if (isset($_POST['submit'])) {
         if(isset($result["id"])){
 			$errors['user_check'] = "このメールアドレスはすでに利用されております。";
         }
-        
     }
 
     //エラーがない場合、pre_userテーブルにインサート
