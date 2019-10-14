@@ -5,7 +5,6 @@ $password = 'test1234';//データベースパスワード
 $dbName = "sample";//データベース名
 $host = "sp_db_1";//ホスト
 
-
 try {
    // MySQLへの接続
    $dsn = "mysql:host={$host};dbname={$dbName};charser=utf8";
