@@ -1,5 +1,12 @@
 <?php
+$today = date("YmdHis");
 
+// 出力情報の設定
+header("Content-Type: application/octet-stream");
+header("Content-Disposition: attachment; filename=".$today.".csv");
+header("Content-Transfer-Encoding: binary");
+
+//DB接続
 $user = 'test';//データベースユーザ名
 $password = 'test1234';//データベースパスワード
 $dbName = "sample";//データベース名
@@ -25,29 +32,14 @@ try {
    print $e->getMessage() . "<br/gt;";
    die();
 }
+
+// 1行目を作成
+$row = '"ID","タイトル","価格","日付"' . "\n";
+foreach ($result as $value ){
+    $row .= '"' . $value['id'] . '","' . $value['title'] . '","' . $value['price'] . '","' . $value['date'] . '"' . "\n";
+}
+
+print $row;
+
+return;
 ?>
-
-<table>
-   <thead>
-       <tr>
-           <th>ID</th>
-           <th>タイトル</th>
-           <th>価格</th>
-           <th>日付</th>
-       </tr>
-   </thead>
-   <tbody>
-       <?php
-           foreach ($result as $row){
-               print "<tr>";
-               print "<td>".$row['id']."</td>";
-               print "<td>".$row['title']."</td>";
-               print "<td>".$row['price']."</td>";
-               print "<td>".$row['date']."</td>";
-               print "</tr>";
-           }
-       ?>
-   </tbody>    
-</table>
-
-<a href="csv.php">csvダウンロード<a>
